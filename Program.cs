@@ -1,5 +1,4 @@
 ﻿using apbd_cw1_git_s34002;
-
 class Program
 {
     static void Main()
@@ -8,13 +7,20 @@ class Program
 
         string input = Console.ReadLine();
 
-        int[] numbers = input
-            .Split(' ')
-            .Select(int.Parse)
-            .ToArray();
+        try
+        {
+            int[] numbers = input
+                .Split(' ')
+                .Select(int.Parse)
+                .ToArray();
 
-        double average = StatisticsHelper.CalculateAverage(numbers);
+            double average = StatisticsHelper.CalculateAverage(numbers);
 
-        Console.WriteLine($"srednia: {average}");
+            Console.WriteLine($"srednia: {average}");
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("error, wpisuj tylko liczby.");
+        }
     }
 }
