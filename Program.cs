@@ -20,9 +20,16 @@ class Program
             Console.WriteLine($"srednia: {average}");
             Console.WriteLine($"suma: {sum}");
         }
+        
+        
         catch (FormatException)
         {
             Console.WriteLine("error, wpisuj tylko liczby.");
+        }
+        if (string.IsNullOrWhiteSpace(input))
+        {
+            Console.WriteLine("Nie podano liczb.");
+            return;
         }
     }
 }
