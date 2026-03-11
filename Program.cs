@@ -3,7 +3,7 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("wprowadz liczby oddzielone spacja, aby obliczyc z nich srednia:");
+        Console.WriteLine("podaj liczby oddzielone spacja, obliczymy srednia, sumę i min");
 
         string input = Console.ReadLine();
 
