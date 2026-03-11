@@ -3,7 +3,7 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("wprowadz lizcby oddzielone spacja, aby obliczyc z nich srednia:");
+        Console.WriteLine("wprowadz liczby oddzielone spacja, aby obliczyc z nich srednia:");
 
         string input = Console.ReadLine();
 
@@ -15,8 +15,10 @@ class Program
                 .ToArray();
 
             double average = StatisticsHelper.CalculateAverage(numbers);
+            int sum = StatisticsHelper.CalculateSum(numbers);
 
             Console.WriteLine($"srednia: {average}");
+            Console.WriteLine($"suma: {sum}");
         }
         catch (FormatException)
         {
