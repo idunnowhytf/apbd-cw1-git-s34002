@@ -8,4 +8,10 @@ public class StatisticsHelper
         return values.Average();
     }
     
+    
+    public static int CalculateMax(int[] values)
+    {
+        return values.Max();
+    }
+    
 }
