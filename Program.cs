@@ -8,7 +8,7 @@ int[] numbers = input.Split(' ').Select(int.Parse).ToArray();
 
 Console.WriteLine($"Average: {StatisticsHelper.CalculateAverage(numbers)}");
 Console.WriteLine($"MAX: {StatisticsHelper.CalculateMax(numbers)}");
-
+Console.WriteLine($"MIN: {StatisticsHelper.CalculateMin(numbers)}");
 if (numbers.Length == 0)
 {
     Console.WriteLine("error");
